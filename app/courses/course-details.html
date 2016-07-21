@@ -1,0 +1,22 @@
+
+<div class="row vertical-align">
+  <div class="col-md-9">
+    <h1>{{ $ctrl.course.name }}</h1>
+  </div>
+  <div class="col-md-3 text-right">
+    <a ng-link="['CoursesList']" class="btn btn-default">Back</a>
+  </div>
+</div>
+<h2>Price: {{ $ctrl.course.price | currency:'£'}}</h2>
+
+<p ng-bind="$ctrl.course.description"></p>
+
+<p><strong>Prerequisites:</strong></p>
+<p>{{ $ctrl.course.prerequisites }}</p>
+
+<p><strong>Total duration:</strong></p>
+<p>{{ $ctrl.course.duration }}</p>
+
+<h3>Teacher Information</h3>
+<h4>{{ $ctrl.course.instructor.name }}</h4>
+<h5>{{ $ctrl.course.instructor.description }}</h5>

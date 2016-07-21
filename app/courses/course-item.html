@@ -1,0 +1,10 @@
+<li class="list-group-item">
+  <div class="row vertical-align">
+    <div class="col-md-4" ng-bind="$ctrl.course.name | uppercase"></div>
+    <div class="col-md-3"><span ng-bind="$ctrl.course.instructor | fullName"></span></div>
+    <div class="col-md-3">{{$ctrl.course.price | currency:'£'}}</div>
+    <div class="col-md-2 text-right">
+      <a ng-link="['CourseDetails', {id: $ctrl.course._id}]" class="btn btn-default">View Course</a>
+    </div>
+  </div>
+</li>

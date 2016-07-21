@@ -1,0 +1,14 @@
+
+
+<div class="row vertical-align">
+    <div class="col-md-9">
+      <h1 ng-bind="$ctrl.title"></h1>
+    </div>
+    <div class="col-md-3 text-right">
+      <a ng-link="['NewCourse']" class="btn btn-primary">New course</a>
+    </div>
+ </div>
+
+<ul class="list-group">
+  <course-item ng-repeat="courseItem in $ctrl.courses | orderBy: 'price'" course="courseItem"></course-item>
+</ul>
