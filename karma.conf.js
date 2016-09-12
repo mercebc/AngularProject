@@ -5,7 +5,7 @@ module.exports = function(config){
 
     files : [
       'app/bower_components/angular/angular.js',
-      'https://npmcdn.com/@angular/router@0.2.0/angular1/angular_1_router.js',
+      'https://unpkg.com/@angular/router@0.2.0/angular1/angular_1_router.js',
       'app/bower_components/angular-mocks/angular-mocks.js',
       'app/app/*.js',
       'app/class-toggler/*.js',
